@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "normalize" href="css/normalize.css" media = "screen">
+    <link rel = "stylesheet" href = "css/styles.css" media = "screen">
+    <title>Pick Your Car!</title>
+</head>
+<body>
+    <div class = heading>
+        <h1 id = "pageHeading"> Pick a Car! </h1>
+        <div class = "helpButton">
+            <a href = "helpPage.html"> ? </a>
+         </div>
+    </div>
+    <div class = main>
+        <div class = grid>
+                <button type = "button" class = "carButton" id = "Capricorn"> </button>
+                <button type = "button" class = "carButton" id = "Aquarius"> </button>
+                <button type = "button" class = "carButton" id = "Pisces"> </button>
+                <button type = "button" class = "carButton" id = "Aires">  </button>
+                <button type = "button" class = "carButton" id = "Taurus"> </button>
+                <button type = "button" class = "carButton" id = "Gemini"> </button>
+                <button type = "button" class = "carButton" id = "Cancer"> </button>
+                <button type = "button" class = "carButton" id = "Leo"> </button>
+                <button type = "button" class = "carButton" id = "Virgo"> </button>
+                <button type = "button" class = "carButton" id = "Libra"> </button>
+                <button type = "button" class = "carButton" id = "Scorpio"> </button>
+                <button type = "button" class = "carButton" id = "Sagittarius"> </button>
+        </div>
+        <div class = info_text>
+            <h3 id = "carHeading"> Select a car for more information. </h3>
+            <div class = input>
+                <form>
+                    <label for = "birthday" id = "label"> Pick a date to select a car: </label>
+                    <input type = "date" id = "birthday" name = "birthday">
+                    <button type = "submit" id = "submit"> Submit </button>
+                </form> 
+            </div>
+            <div class = 'carImage'>
+                <img id = "carImage" src = "images/bmw.webp" hidden>
+            </div>
+             <p id = "infoText" hidden>  </p>
+             <button type = "button" id = "exit" hidden> Exit </button>
+        </div>
+    </div>
+<script src = "main.js"> </script>
+</body>
+</html>
