@@ -4,7 +4,7 @@ const sign = [
   document.getElementById('Capricorn'), 
   document.getElementById('Aquarius'),
   document.getElementById('Pisces'),
-  document.getElementById('Aires'),
+  document.getElementById('Aries'),
   document.getElementById('Taurus'),
   document.getElementById('Gemini'),
   document.getElementById('Cancer'),
@@ -20,10 +20,10 @@ const sounds = {
   Capricorn: 'sounds/subaru.mp3',
   Aquarius: 'sounds/ford.mp3',
   Pisces: 'sounds/mazda.mp3', 
-  Aires: 'sounds/brat.mp3',
+  Aries: 'sounds/brat.mp3',
   Taurus: 'sounds/mg.mp3',
   Gemini: 'sounds/fiat.mp3',
-  Cancer: 'sounds/porche.mp3',
+  Cancer: 'sounds/porsche.mp3',
   Leo: 'sounds/roadrunner.mp3',
   Virgo: 'sounds/honda.mp3',
   Libra: 'sounds/mustang.mp3',
@@ -64,7 +64,6 @@ function selectAqua(){
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const pageHeading = document.getElementById('pageHeading');
-  carImage = document.getElementById('carImage');
   const label = document.getElementById('label');
   playSound('Aquarius');
   infoText.style.color = '#050505';
@@ -100,13 +99,13 @@ function selectPisces(){
   document.body.style.background = '#CA613A';     
 }    
 
-function selectAires(){
+function selectAries(){
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const pageHeading = document.getElementById('pageHeading');
   const carImage = document.getElementById('carImage');
   const label = document.getElementById('label');
-  playSound('Aires');
+  playSound('Aries');
   infoText.style.color = '#050505';
   carHeading.style.color = '#050505';
   pageHeading.style.color = '#050505';
@@ -213,7 +212,7 @@ function selectVirgo(){
   label.style.color = '#050505';
   infoText.style.display = 'block';
   carImage.style.display = 'flex';
-  carImage.src = 'images/honda.webp '
+  carImage.src = 'images/honda.webp'
   infoText.textContent = 'You selected the Honda Civic. The Civic is one on Honda\'s most famous cars. Known for their durability, reliability, and reasonable price, the Civic has become famous in the world of tuner cars. Because of this, their parts have become widely available, either aftermarket, or from the manufacturer.';
   carHeading.textContent = 'Honda Civic';
   exit.style.display = 'flex';
@@ -332,16 +331,16 @@ function getZodiac(month, day) {
 //Loops through array sign, and updates UI based on the button the user clicks
 sign.forEach(element => {
   element.addEventListener('click', function () {
-    const date = document.getElementById('birthday');
-    date.value = '';
+    const formClear = document.getElementById('birthday');
+    formClear.value = '';
     if (element.id === 'Capricorn') {
       selectCapri();
     } else if (element.id === 'Aquarius'){
       selectAqua();
     } else if (element.id === 'Pisces'){
       selectPisces();
-    } else if (element.id === 'Aires'){
-      selectAires();
+    } else if (element.id === 'Aries'){
+      selectAries();
     } else if (element.id === 'Taurus'){
       selectTaurus();
     } else if (element.id === 'Gemini'){
@@ -366,18 +365,10 @@ function handleSubmit (event){
   event.preventDefault();
 }
 
-function seperateMonth (month){
-  return month;
-}
-
-function seperateDay (day){
-  return day;
-}
-
-date.addEventListener('submit', function() {
+date.addEventListener('submit', function(event) {
   handleSubmit(event);
   let seperateDate = birthday.value.split('-');
-  let month = seperateMonth(Number(seperateDate[1]));
+  let month = Number(seperateDate[1]);
   let day = Number(seperateDate[2]);
   getZodiac(month, day);
 
@@ -389,7 +380,7 @@ date.addEventListener('submit', function() {
   } else if (getZodiac(month,day) === 'Pisces'){
     selectPisces();
   }else if (getZodiac(month,day) === 'Aries'){
-    selectAires();
+    selectAries();
   }else if (getZodiac(month,day) === 'Taurus'){
     selectTaurus();
   }else if (getZodiac(month,day) === 'Gemini'){

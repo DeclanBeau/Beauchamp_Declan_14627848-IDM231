@@ -14,37 +14,16 @@
     --color-background: #EFEFEF;
     --color-text: #050505;
     --font-main: 'Outfit', Arial, sans-serif;
-
     --rhythm: 1.5rem; 
-
 }
 
-body{
-    background-color: var(--color-background);
-    margin: 0;
-}
-button{
-    border-width: 0px;
-    height: 200px;
-    width: 200px;
-    cursor: pointer;
+#Aquarius{
+    background-image: url(../images/ford.webp);
+    background-size: cover;
 }
 
-#Aires{
+#Aries{
     background-image: url(../images/brat.webp);
-    background-size: cover;
-}
-
-#Taurus{
-    background-image: url(../images/mg.webp);
-    background-size: cover;
-}
-#Pisces{
-    background-image: url(../images/mazda.webp);
-    background-size: cover;
-}
-#Gemini{
-    background-image: url(../images/fiat.webp);
     background-size: cover;
 }
 
@@ -53,13 +32,18 @@ button{
     background-size: cover;
 }
 
-#Leo{
-    background-image: url(../images/roadrunner.webp);
+#Capricorn{
+    background-image: url(../images/subaru.webp);
     background-size: cover;
 }
 
-#Virgo{
-    background-image: url(../images/honda.webp);
+#Gemini{
+    background-image: url(../images/fiat.webp);
+    background-size: cover;
+}
+
+#Leo{
+    background-image: url(../images/roadrunner.webp);
     background-size: cover;
 }
 
@@ -68,8 +52,8 @@ button{
     background-size: cover;
 }
 
-#Scorpio{
-    background-image: url(../images/bmw.webp);
+#Pisces{
+    background-image: url(../images/mazda.webp);
     background-size: cover;
 }
 
@@ -78,27 +62,66 @@ button{
     background-size: cover;
 }
 
-#Capricorn{
-    background-image: url(../images/subaru.webp);
+#Scorpio{
+    background-image: url(../images/bmw.webp);
     background-size: cover;
 }
 
-#Aquarius{
-    background-image: url(../images/ford.webp);
+#Taurus{
+    background-image: url(../images/mg.webp);
+    background-size: cover;
+}
+
+#Virgo{
+    background-image: url(../images/honda.webp);
     background-size: cover;
 }
 
 #exit {
     background-color: white;
-    position: absolute;
-    display: hidden;
+    border: 1px solid var(--color-text);
+    border-radius: 24px;
+    height: 2rem;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--color-text);
-    height: 2rem;
+    position: absolute;
     width: 5rem;
-    border-radius: 24px;
+}
 
+.input{
+    display: flex;
+}
+
+.backButton{
+    align-items: center;
+    background-color: white;
+    border: 1px solid var(--color-text);
+    border-radius:24px;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    margin: auto;
+    width: 120px;
+}
+
+body{
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+button{
+    border-width: 0px;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+}
+
+a{
+    color: var(--color-text);
+    font-family: var(--font-main);
+    font-weight: 800;
+    font-size: var(--rhythm);
+    text-decoration: none;
 }
 
 .carImage{
@@ -106,29 +129,21 @@ button{
     justify-content: center;
 }
 
-p{
-    color: var(--color-text);
-    font-family: var(--font-main);
-    font-weight: 400; 
-    font-size: 1.05rem;
-    line-height: var(--rhythm);
-    margin: 0 .5rem .75rem; 
-    width: 20rem
+.grid{
+    align-content:center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, minmax(200px, 200px));
+    grid-template-rows: repeat(3, minmax(200px, 200px));
+    justify-items: center;
+    margin-right: 3rem;
 }
 
-label{
-    color: var(--color-text);
-    font-family: var(--font-main);
-    font-weight: 400; 
-    font-size: 1.05rem;
-    margin: .75rem .5rem 0; 
-}
 h1{
     color: var(--color-text);
     font-family: var(--font-main);
     font-weight: 800;
-    font-size: 2.1  rem; 
-    margin:  1rem; 
+    margin: 1rem;
     padding-left: 2.3rem;
 }
 
@@ -139,54 +154,18 @@ h2{
 }
 
 h3{
-    color:var(--color-text);
-    font-family: var(--font-main);
+    color: var(--color-text);
     display: flex;
+    font-family: var(--font-main);
     font-weight: 600;
-    font-size: 1.3; 
+    font-size: 1.1rem;
     margin: .75rem .5rem 0;
 }
 
-img{
-    height: 300px;
-    width: 300px;
-    margin: .5rem;
-    object-fit: cover;
-}
-
-
-input{
-    font-family:var(--font-main);
-    border-radius: 12px;
-    height: 24px;
-    width: 112 px;
-    border-color: var(--color-text);
-    border-width: 1px;
-}
-
-a{
-    font-family: var(--font-main);
-    font-weight: 800;
-    font-size: var(--rhythm);
-    color: var(--color-text);
-    text-decoration: none;
-
-}
-
-.helpImages{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.help2Images{
-    display: flex;
-    flex-direction: column;
-    max-height: 400px;
-}
 .help1 img{
     height: 400px;
-    width: 450px;
     margin-top: 0;
+    width: 450px;
 }
 
 .help2 img{
@@ -194,37 +173,53 @@ a{
     width: 600px;
 }
 
-
-.heading{
-    padding-left: var(--rhythm);
+.help2Images{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    max-height: 400px;
+}
 
-}
-.backButton{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 44px;
-    width: 120px;
-    background-color: white;
-    border: 1px solid var(--color-text);
-    border-radius:24px
-}
 .helpButton{
-    position: absolute;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    top: 1rem;
-    right: 1rem;
-    height: 32px;
-    width: 32px;
     background-color: white;
     border: 1px solid var(--color-text);
     border-radius: 24px;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 32px;
+}
+
+.helpImages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.heading{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: var(--rhythm);
+}
+
+input{
+    border-color: var(--color-text);
+    border-radius: 12px;
+    border-width: 1px;
+    font-family: var(--font-main);
+    height: 24px;
+}
+
+label{
+    color: var(--color-text);
+    font-family: var(--font-main);
+    font-weight: 400; 
+    font-size: 1.05rem;
+    margin: .75rem .5rem 0; 
 }
 
 .main{
@@ -233,28 +228,30 @@ a{
     margin: 0 var(--rhythm);
 }
 
-.grid{
-     display: grid;
-     gap: 1rem;
-     grid-template-columns: repeat(4, minmax(200px, 200px));
-     grid-template-rows: repeat(3, minmax(200px, 200px));
-     align-content:center;
-     justify-items: center;
-     margin-right: 3rem;
+p{
+    color: var(--color-text);
+    font-family: var(--font-main);
+    font-weight: 400; 
+    font-size: 1.05rem;
+    line-height: var(--rhythm);
+    margin: 0 .5rem .75rem; 
+    width: 20rem;
 }
 
-.input{
-    display: flex;
+img{
+    height: 300px;
+    margin: .5rem;
+    object-fit: cover;
+    width: 300px;
 }
 
 #submit{
-    height: 32px;
-    width: 60px;
-    padding: 6px;
-    text-align: center;
+    background-color: white;
     border: 1px solid var(--color-text);
     border-radius: 24px;
-    background-color: white;
     font-family: var(--font-main);
+    height: 32px;
+    padding: 6px;
+    text-align: center;
+    width: 60px;
 }
-
