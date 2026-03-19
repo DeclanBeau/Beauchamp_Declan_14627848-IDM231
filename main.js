@@ -54,7 +54,7 @@ function selectCapri(){
   infoText.style.display = 'block';
   carImage.style.display = 'flex';
   carImage.src = 'images/subaru.webp'
-  infoText.textContent = 'You selected the Subaru Impreza STI. The Impreza STI was originally created as a part of Subaru\'s motorsport division called Subaru Tecnica International to allow it to compete and develop for the FIA World Rally Championship. Pictured is the 2005 variant of the Impreza WRX STI, from the second generation, sometimes called the \"peanut eye\", for it\'s peanut shaped headlights.';
+  infoText.textContent = 'You selected the Subaru Impreza STI. The Impreza STI was originally created as a part of Subaru\'s motorsport division called Subaru Tecnica International to allow it to compete and develop for the FIA World Rally Championship. Pictured is the 2005 variant of the Impreza WRX STI, from the second generation, sometimes called the \"peanut eye,\" for it\'s peanut shaped headlights.';
   carHeading.textContent = 'Subaru Impreza STI';
   exit.style.display = 'flex';
   document.body.style.background = '#8D94A6';   

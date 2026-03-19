@@ -88,6 +88,21 @@
     width: 5rem;
 }
 
+#submit{
+    background-color: white;
+    border: 1px solid var(--color-text);
+    border-radius: 24px;
+    font-family: var(--font-main);
+    height: 32px;
+    padding: 6px;
+    text-align: center;
+    width: 60px;
+}
+
+#infoText{
+    width: 400px;
+}
+
 .input{
     display: flex;
 }
@@ -201,6 +216,7 @@ h3{
 
 .heading{
     align-items: center;
+    justify-content: left;
     display: flex;
     flex-direction: row;
     padding-left: var(--rhythm);
@@ -243,15 +259,4 @@ img{
     margin: .5rem;
     object-fit: cover;
     width: 300px;
-}
-
-#submit{
-    background-color: white;
-    border: 1px solid var(--color-text);
-    border-radius: 24px;
-    font-family: var(--font-main);
-    height: 32px;
-    padding: 6px;
-    text-align: center;
-    width: 60px;
 }
