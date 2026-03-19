@@ -1,5 +1,3 @@
-//2 links: site link, gitHub repo link
-
 const date = document.querySelector('form');
 const exit = document.getElementById('exit');
 const sign = [
