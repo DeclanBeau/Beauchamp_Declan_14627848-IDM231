@@ -1,5 +1,3 @@
-//for sounds: make sure the sound that is playing stops before the new sound starts
-//rename repo Beauchamp_Declan_14627848-IDM231
 //2 links: site link, gitHub repo link
 
 const date = document.querySelector('form');
@@ -58,8 +56,8 @@ function selectCapri(){
   infoText.style.display = 'block';
   carImage.style.display = 'flex';
   carImage.src = 'images/subaru.webp'
-  infoText.textContent = 'You selected the Subaru Impreza';
-  carHeading.textContent = 'Subaru Impreza';
+  infoText.textContent = 'You selected the Subaru Impreza STI. The Impreza STI was originally created as a part of Subaru\'s motorsport division called Subaru Tecnica International to allow it to compete and develop for the FIA World Rally Championship. Pictured is the 2005 variant of the Impreza WRX STI, from the second generation, sometimes called the \"peanut eye\", for it\'s peanut shaped headlights.';
+  carHeading.textContent = 'Subaru Impreza STI';
   exit.style.display = 'flex';
   document.body.style.background = '#8D94A6';   
 }
@@ -78,8 +76,8 @@ function selectAqua(){
   infoText.style.display = 'block';
   carImage.style.display = 'flex';
   carImage.src = 'images/ford.webp';
-  infoText.textContent = 'You selected the Ford GT';
-  carHeading.textContent = 'Ford GT';
+  infoText.textContent = 'You selected the Ford GT40. The GT40 was created in the 1960\'s for the sole purpose of beating Scuderia Ferrari in the 24 Hours of Le Mans. It\'s first race was in 1964, which they saw many concerns with reliability, leading to all three cars retiring from the race. However, in 1965, the Ford GT40, new and improved, claimed a 1-2-3 victory, leading to an era of sportscar racing dominance.';
+  carHeading.textContent = 'Ford GT40';
   exit.style.display = 'flex';
   document.body.style.background = '#A8D5E6';         
 }    
@@ -98,7 +96,7 @@ function selectPisces(){
   infoText.style.display = 'block';
   carImage.style.display = 'flex';
   carImage.src = 'images/mazda.webp';
-  infoText.textContent = 'You selected the Mazda RX-7';
+  infoText.textContent = 'You selected the Mazda RX-7. The RX-7 was unique for it\'s rotary engine, which functions differently than a classic internal combustion engine. Instead of combustion being created by pistons, it is created by a spinning triangle, which allows for the size of the engine to be smaller, and with a smaller size, comes a lighter weight. These engines are known for their unique sound, and ability to be modified and tuned.';
   carHeading.textContent = 'Mazda RX-7';
   exit.style.display = 'flex';
   document.body.style.background = '#CA613A';     
@@ -118,7 +116,7 @@ function selectAires(){
   infoText.style.display = 'block';
   carImage.style.display = 'block';
   carImage.src = 'images/brat.webp';
-  infoText.textContent = 'You selected the Subaru BRAT';
+  infoText.textContent = 'You selected the Subaru BRAT. The BRAT is a four wheel drive coupe sized truck. To be able to import the BRAT into the United States, Subaru had to add additional jump seats in the bed of the truck, to turn the car into a four seater. This was because of a tariff that the United States had placed on coupes, which were widely considered sportscars.';
   carHeading.textContent = 'Subaru BRAT';
   exit.style.display = 'flex';
   document.body.style.background = '#DB4646';
@@ -138,7 +136,7 @@ function selectTaurus(){
   infoText.style.display = 'block';
   carImage.style.display =  'flex';
   carImage.src = 'images/mg.webp';
-  infoText.textContent = 'You selected the MGB';
+  infoText.textContent = 'You selected the MGB. The MGB is one of the most famous roadsters ever made. Since they are not incredibly fast, roadsters rely on their light weight and handling. This makes these cars quick and fun cars to drive. They are known as a wealthy person\'s weekend car, since they are not practical to drive day to day, but they are fun as can be!';
   carHeading.textContent = 'MGB';
   exit.style.display = 'flex';
   document.body.style.background = '#008C47';
@@ -158,7 +156,7 @@ function selectGemini(){
   infoText.style.display = 'block';
   carImage.style.display = 'block';
   carImage.src = 'images/fiat.webp';
-  infoText.textContent = 'You selected the Fiat 124 Spider You selected the Fiat 124 Spider You selected the Fiat 124 Spider You selected the Fiat 124 Spider';
+  infoText.textContent = 'You selected the Fiat 124 Spider. The 124 Spider was by Pininfarina, one of the most famous automotive designers from Italy. Pininfarina also designed many of the older Ferrari models, which lead to people identifying the 124 Spider as a \"Baby Ferrari.\" These lighweight sports roadsters are well known as fun cars to drive, but, like most Italian cars, they do have reliability issues, making them quite rare today.';
   carHeading.textContent = 'Fiat 124 Spider';
   exit.style.display = 'flex';
   document.body.style.background = '#F6E684';
@@ -177,9 +175,9 @@ function selectCancer(){
   label.style.color = '#050505';
   infoText.style.display = 'block';
   carImage.style.display = 'block';
-  carImage.src = 'images/porche.webp';
-  infoText.textContent = 'You selected the Porche 911';
-  carHeading.textContent = 'Porche 911';
+  carImage.src = 'images/porsche.webp';
+  infoText.textContent = 'You selected the Porsche 911. The 911 is known as Porsche\'s flagship model, and is one of the most recognizable sportscars. The 911 has a flat engine, which is atypical, however, it saves a lot of vertical space in the engine bay. Early models of the 911 were known as \"Widowmakers,\" since they were powerful and unstable, making them very difficult to drive, and very easy to crash.';
+  carHeading.textContent = 'Porsche 911';
   exit.style.display = 'flex';
   document.body.style.background = '#FFFFF0';
 }    
@@ -198,7 +196,7 @@ function selectLeo(){
   infoText.style.display = 'block';
   carImage.style.display = 'block';
   carImage.src = 'images/roadrunner.webp'
-  infoText.textContent = 'You selected the Plymouth Roadrunner';
+  infoText.textContent = 'You selected the Plymouth Roadrunner. The Roadrunner was a budget muscle car manufactured by the Chrysler motor company, under the Plymouth badge. To use the name Roadrunner, Plymouth paid Warner Brothers animation company \$50,000 for the rights to the likeness of their character, who is featured on some model\'s badges.';
   carHeading.textContent = 'Plymouth Roadrunner';
   exit.style.display = 'flex';
   document.body.style.background = '#DAA157';
@@ -218,7 +216,7 @@ function selectVirgo(){
   infoText.style.display = 'block';
   carImage.style.display = 'flex';
   carImage.src = 'images/honda.webp '
-  infoText.textContent = 'You selected the Honda Civic';
+  infoText.textContent = 'You selected the Honda Civic. The Civic is one on Honda\'s most famous cars. Known for their durability, reliability, and reasonable price, the Civic has become famous in the world of tuner cars. Because of this, their parts have become widely available, either aftermarket, or from the manufacturer.';
   carHeading.textContent = 'Honda Civic';
   exit.style.display = 'flex';
   document.body.style.background = '#CF8FA9';
@@ -238,7 +236,7 @@ function selectLibra(){
   infoText.style.display = 'block';
   carImage.style.display = 'flex';
   carImage.src = 'images/mustang.webp';
-  infoText.textContent = 'You selected the Ford Mustang';
+  infoText.textContent = 'You selected the Ford Mustang. The Mustang is one of the most famous muscle cars in the world. The pictured model is a third-generation Mustang, which are called the Fox body, due to them using Ford\'s Fox platform, which was a one-size-fits-all platform. The Fox platform was used on 15 other cars manufactured by Ford during this time.';
   carHeading.textContent = 'Ford Mustang';
   exit.style.display = 'flex';
   document.body.style.background = '#30A5C2';            
@@ -256,7 +254,7 @@ function selectScorpio(){
   carHeading.style.color = '#EFEFEF';
   pageHeading.style.color = '#EFEFEF';
   label.style.color = '#EFEFEF';
-  infoText.textContent = 'You selected the BMW E30 M3';
+  infoText.textContent = 'You selected the BMW E30 M3. The E30 M3 was originally designed as homologation special for racing, much like the Subaru Impreza and the Ford GT. Because of this, the E30 M3 has a lot of modifications from the factory, like lighter glass, and less rubber to save weight. Additioanlly, they also came with splitters and spoilers and performance brakes for aerodynamic and handling purposes.';
   carHeading.textContent = 'BMW E30 M3';
   exit.style.display = 'flex';
   carImage.style.display = 'flex';
@@ -276,8 +274,8 @@ function selectSagit(){
   carHeading.style.color = '#EFEFEF';
   pageHeading.style.color = '#EFEFEF';
   label.style.color = '#EFEFEF';
-  infoText.textContent = 'You selected the Nissan Skyline';
-  carHeading.textContent = 'Nissan Skyline';
+  infoText.textContent = 'You selected the Nissan Skyline GT-R. The Skyline GT-R was the perfromance model of Nissan\'s pre-established Skyline sedans and coupes. Unlike other sports cars, the Skyline GT-R was all wheel drive, and featured four-wheel steering. The Skyline GT-R was a very advanced car for it\'s time, across all generations. These cars are highly sought after in the US, since they were not manufactured here.';
+  carHeading.textContent = 'Nissan Skyline GT-R';
   exit.style.display = 'flex';
   carImage.style.display = 'flex';
   carImage.src = 'images/skyline.webp';
