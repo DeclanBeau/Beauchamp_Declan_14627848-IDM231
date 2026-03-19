@@ -256,7 +256,7 @@ p{
 
 img{
     height: 300px;
-    margin: .5rem;
+    margin: 1rem;
     object-fit: cover;
     width: 300px;
 }
