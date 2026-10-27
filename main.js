@@ -1,7 +1,7 @@
 const date = document.querySelector('form');
 const exit = document.getElementById('exit');
 const sign = [
-  document.getElementById('Capricorn'), 
+  document.getElementById('Capricorn'),
   document.getElementById('Aquarius'),
   document.getElementById('Pisces'),
   document.getElementById('Aries'),
@@ -15,11 +15,11 @@ const sign = [
   document.getElementById('Sagittarius')
 ];
 
-let currentSound = null; 
+let currentSound = null;
 const sounds = {
   Capricorn: 'sounds/subaru.mp3',
   Aquarius: 'sounds/ford.mp3',
-  Pisces: 'sounds/mazda.mp3', 
+  Pisces: 'sounds/mazda.mp3',
   Aries: 'sounds/brat.mp3',
   Taurus: 'sounds/mg.mp3',
   Gemini: 'sounds/fiat.mp3',
@@ -31,16 +31,16 @@ const sounds = {
   Sagittarius: 'sounds/skyline.mp3'
 }
 //Stops sound that's playing, starts new sound
-function playSound(sign){
-  if(currentSound){
+function playSound(sign) {
+  if (currentSound) {
     currentSound.pause();
     currentSound.currentTime = 0;
   }
   currentSound = new Audio(sounds[sign]);
-    currentSound.play();
+  currentSound.play();
 }
 //UI Updating Functions
-function selectCapri(){
+function selectCapri() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const carImage = document.getElementById('carImage');
@@ -57,10 +57,10 @@ function selectCapri(){
   infoText.textContent = 'You selected the Subaru Impreza STI. The Impreza STI was originally created as a part of Subaru\'s motorsport division called Subaru Tecnica International to allow it to compete and develop for the FIA World Rally Championship. Pictured is the 2005 variant of the Impreza WRX STI, from the second generation, sometimes called the \"peanut eye,\" for it\'s peanut shaped headlights.';
   carHeading.textContent = 'Subaru Impreza STI';
   exit.style.display = 'flex';
-  document.body.style.background = '#8D94A6';   
+  document.body.style.background = '#8D94A6';
 }
 
-function selectAqua(){
+function selectAqua() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const pageHeading = document.getElementById('pageHeading');
@@ -76,10 +76,10 @@ function selectAqua(){
   infoText.textContent = 'You selected the Ford GT40. The GT40 was created in the 1960\'s for the sole purpose of beating Scuderia Ferrari in the 24 Hours of Le Mans. It\'s first race was in 1964, which they saw many concerns with reliability, leading to all three cars retiring from the race. However, in 1965, the Ford GT40, new and improved, claimed a 1-2-3 victory, leading to an era of sportscar racing dominance.';
   carHeading.textContent = 'Ford GT40';
   exit.style.display = 'flex';
-  document.body.style.background = '#A8D5E6';         
-}    
+  document.body.style.background = '#A8D5E6';
+}
 
-function selectPisces(){
+function selectPisces() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const pageHeading = document.getElementById('pageHeading');
@@ -96,10 +96,10 @@ function selectPisces(){
   infoText.textContent = 'You selected the Mazda RX-7. The RX-7 was unique for it\'s rotary engine, which functions differently than a classic internal combustion engine. Instead of combustion being created by pistons, it is created by a spinning triangle, which allows for the size of the engine to be smaller, and with a smaller size, comes a lighter weight. These engines are known for their unique sound, and ability to be modified and tuned.';
   carHeading.textContent = 'Mazda RX-7';
   exit.style.display = 'flex';
-  document.body.style.background = '#CA613A';     
-}    
+  document.body.style.background = '#CA613A';
+}
 
-function selectAries(){
+function selectAries() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const pageHeading = document.getElementById('pageHeading');
@@ -117,9 +117,9 @@ function selectAries(){
   carHeading.textContent = 'Subaru BRAT';
   exit.style.display = 'flex';
   document.body.style.background = '#DB4646';
-}    
+}
 
-function selectTaurus(){
+function selectTaurus() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const pageHeading = document.getElementById('pageHeading');
@@ -131,15 +131,15 @@ function selectTaurus(){
   pageHeading.style.color = '#050505';
   label.style.color = '#050505';
   infoText.style.display = 'block';
-  carImage.style.display =  'flex';
+  carImage.style.display = 'flex';
   carImage.src = 'images/mg.webp';
   infoText.textContent = 'You selected the MGB. The MGB is one of the most famous roadsters ever made. Since they are not incredibly fast, roadsters rely on their light weight and handling. This makes these cars quick and fun cars to drive. They are known as a wealthy person\'s weekend car, since they are not practical to drive day to day, but they are fun as can be!';
   carHeading.textContent = 'MGB';
   exit.style.display = 'flex';
   document.body.style.background = '#008C47';
-}    
+}
 
-function selectGemini(){
+function selectGemini() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const pageHeading = document.getElementById('pageHeading');
@@ -157,9 +157,9 @@ function selectGemini(){
   carHeading.textContent = 'Fiat 124 Spider';
   exit.style.display = 'flex';
   document.body.style.background = '#F6E684';
-}    
+}
 
-function selectCancer(){
+function selectCancer() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const pageHeading = document.getElementById('pageHeading');
@@ -177,9 +177,9 @@ function selectCancer(){
   carHeading.textContent = 'Porsche 911';
   exit.style.display = 'flex';
   document.body.style.background = '#FFFFF0';
-}    
+}
 
-function selectLeo(){
+function selectLeo() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const pageHeading = document.getElementById('pageHeading');
@@ -197,9 +197,9 @@ function selectLeo(){
   carHeading.textContent = 'Plymouth Roadrunner';
   exit.style.display = 'flex';
   document.body.style.background = '#DAA157';
-}    
- 
-function selectVirgo(){
+}
+
+function selectVirgo() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const carImage = document.getElementById('carImage');
@@ -217,9 +217,9 @@ function selectVirgo(){
   carHeading.textContent = 'Honda Civic';
   exit.style.display = 'flex';
   document.body.style.background = '#CF8FA9';
-}    
+}
 
-function selectLibra(){
+function selectLibra() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const carImage = document.getElementById('carImage');
@@ -236,10 +236,10 @@ function selectLibra(){
   infoText.textContent = 'You selected the Ford Mustang. The Mustang is one of the most famous muscle cars in the world. The pictured model is a third-generation Mustang, which are called the Fox body, due to them using Ford\'s Fox platform, which was a one-size-fits-all platform. The Fox platform was used on 15 other cars manufactured by Ford during this time.';
   carHeading.textContent = 'Ford Mustang';
   exit.style.display = 'flex';
-  document.body.style.background = '#30A5C2';            
-}    
+  document.body.style.background = '#30A5C2';
+}
 
-function selectScorpio(){
+function selectScorpio() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const carImage = document.getElementById('carImage');
@@ -256,10 +256,10 @@ function selectScorpio(){
   exit.style.display = 'flex';
   carImage.style.display = 'flex';
   carImage.src = 'images/bmw.webp';
-  document.body.style.background = '#242424';               
-}    
+  document.body.style.background = '#242424';
+}
 
-function selectSagit(){
+function selectSagit() {
   const infoText = document.getElementById('infoText');
   const carHeading = document.getElementById('carHeading');
   const carImage = document.getElementById('carImage');
@@ -276,28 +276,28 @@ function selectSagit(){
   exit.style.display = 'flex';
   carImage.style.display = 'flex';
   carImage.src = 'images/skyline.webp';
-  document.body.style.background = '#501D87';           
-}    
+  document.body.style.background = '#501D87';
+}
 
-function exitButton(){
-  exit.addEventListener('click', function()  {
-   const infoText = document.getElementById('infoText');
-   const carHeading = document.getElementById('carHeading');
-   const carImage = document.getElementById('carImage');
-   if(currentSound){
-    currentSound.pause();
-    currentSound.currentTime = 0;
-   }
-   infoText.style.display = 'none';
-   carImage.style.display = 'none';
-   infoText.textContent = ' ';
-   carHeading.textContent = 'Select a car for more information.'
-   exit.style.display = 'none';
-   infoText.style.color = '#050505';
-   carHeading.style.color = '#050505';
-   pageHeading.style.color = '#050505';
-   label.style.color = '#050505';
-   document.body.style.background = '#EFEFEF';
+function exitButton() {
+  exit.addEventListener('click', function () {
+    const infoText = document.getElementById('infoText');
+    const carHeading = document.getElementById('carHeading');
+    const carImage = document.getElementById('carImage');
+    if (currentSound) {
+      currentSound.pause();
+      currentSound.currentTime = 0;
+    }
+    infoText.style.display = 'none';
+    carImage.style.display = 'none';
+    infoText.textContent = ' ';
+    carHeading.textContent = 'Select a car for more information.'
+    exit.style.display = 'none';
+    infoText.style.color = '#050505';
+    carHeading.style.color = '#050505';
+    pageHeading.style.color = '#050505';
+    label.style.color = '#050505';
+    document.body.style.background = '#EFEFEF';
   }), false;
 }
 //Zodiac Function
@@ -335,67 +335,67 @@ sign.forEach(element => {
     formClear.value = '';
     if (element.id === 'Capricorn') {
       selectCapri();
-    } else if (element.id === 'Aquarius'){
+    } else if (element.id === 'Aquarius') {
       selectAqua();
-    } else if (element.id === 'Pisces'){
+    } else if (element.id === 'Pisces') {
       selectPisces();
-    } else if (element.id === 'Aries'){
+    } else if (element.id === 'Aries') {
       selectAries();
-    } else if (element.id === 'Taurus'){
+    } else if (element.id === 'Taurus') {
       selectTaurus();
-    } else if (element.id === 'Gemini'){
+    } else if (element.id === 'Gemini') {
       selectGemini();
-    } else if (element.id === 'Cancer'){
+    } else if (element.id === 'Cancer') {
       selectCancer();
-    }else if (element.id === 'Leo'){
+    } else if (element.id === 'Leo') {
       selectLeo();
-    }else if (element.id === 'Virgo'){
+    } else if (element.id === 'Virgo') {
       selectVirgo();
-    }else if (element.id === 'Libra'){
+    } else if (element.id === 'Libra') {
       selectLibra();
-    }else if (element.id === 'Scorpio'){
+    } else if (element.id === 'Scorpio') {
       selectScorpio();
-    }else if (element.id === 'Sagittarius'){
+    } else if (element.id === 'Sagittarius') {
       selectSagit();
     }
   }), false;
 })
 
-function handleSubmit (event){
+function handleSubmit(event) {
   event.preventDefault();
 }
 
-date.addEventListener('submit', function(event) {
+date.addEventListener('submit', function (event) {
   handleSubmit(event);
   let seperateDate = birthday.value.split('-');
   let month = Number(seperateDate[1]);
   let day = Number(seperateDate[2]);
   getZodiac(month, day);
 
-//Changes the UI based off selection in date input
- if (getZodiac(month, day) === 'Capricorn'){
+  //Changes the UI based off selection in date input
+  if (getZodiac(month, day) === 'Capricorn') {
     selectCapri();
-  } else if (getZodiac(month, day) === 'Aquarius'){
+  } else if (getZodiac(month, day) === 'Aquarius') {
     selectAqua();
-  } else if (getZodiac(month,day) === 'Pisces'){
+  } else if (getZodiac(month, day) === 'Pisces') {
     selectPisces();
-  }else if (getZodiac(month,day) === 'Aries'){
+  } else if (getZodiac(month, day) === 'Aries') {
     selectAries();
-  }else if (getZodiac(month,day) === 'Taurus'){
+  } else if (getZodiac(month, day) === 'Taurus') {
     selectTaurus();
-  }else if (getZodiac(month,day) === 'Gemini'){
+  } else if (getZodiac(month, day) === 'Gemini') {
     selectGemini();
-  }else if (getZodiac(month, day) === 'Cancer'){
+  } else if (getZodiac(month, day) === 'Cancer') {
     selectCancer();
-  }else if (getZodiac(month, day) === 'Leo'){
+  } else if (getZodiac(month, day) === 'Leo') {
     selectLeo();
-  }else if (getZodiac(month,day) === 'Virgo'){
+  } else if (getZodiac(month, day) === 'Virgo') {
     selectVirgo();
-  }else if (getZodiac(month, day) === 'Libra'){
+  } else if (getZodiac(month, day) === 'Libra') {
     selectLibra();
-  }else if (getZodiac(month, day) === 'Scorpio'){
+  } else if (getZodiac(month, day) === 'Scorpio') {
     selectScorpio();
-  }else if (getZodiac(month, day) === 'Sagittarius'){
+  } else if (getZodiac(month, day) === 'Sagittarius') {
     selectSagit();
   }
 
